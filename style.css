@@ -396,6 +396,12 @@ nav .links {
     margin: 5px;
 }
 
+.right_side_homepage .button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .right_side_homepage button {
     padding: 15px;
     margin: 10px;
