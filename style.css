@@ -411,8 +411,14 @@ nav .links {
     font-weight: 600;
     font-size: 1vw;
     color: black;
-    background-color: deepskyblue;
+    background-color: lightskyblue;
     cursor: pointer;
+}
+
+.right_side_homepage button:hover {
+    background-color: rgb(95, 194, 255);
+    transition: all .35s ease-in-out;
+    transform: scale(1.02);
 }
 
 #about_toptext {
@@ -659,11 +665,15 @@ nav .links {
     margin: 0px 10px;
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact_form h2 {
     text-align: left;
     color: rgb(152, 250, 217);
+    letter-spacing: 2px;
 }
 
 .contact_form h6 {
@@ -676,6 +686,7 @@ nav .links {
 
 .contact_form #second_h2 {
     margin-top: 15px;
+    letter-spacing: 2px;
 }
 
 .contact_form p {
@@ -683,7 +694,7 @@ nav .links {
     color: aliceblue;
     font-size: 1.25rem;
     line-height: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-top: 10px;
 }
 
@@ -733,6 +744,30 @@ nav .links {
 
 #imgsssss img:hover {
     transform: scale(1.05);
+}
+
+.buttons_div_contact{
+    display: none;
+}
+
+#seeoff{
+    display: flex;
+    justify-content: space-between;
+}
+
+#seeoff button{
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #9BF8F4;
+    cursor: pointer;
+    color: #9BF8F4;
+    background-color: transparent;
+
+}
+
+#seeoff button :hover{
+    color: white;
+
 }
 
 
@@ -1023,7 +1058,38 @@ nav .links {
     }
 
     .contact_form p{
-        font-size: 3.8vw;
+        font-size: 3.2vw;
+    }
+
+    .contact_form h6{
+        font-size: 2.5vw;
+    }
+
+    .buttons_div_contact{
+        display: inline;
+    }
+
+    .buttons_div_contact button{
+        padding: 5px;
+        margin-top: 5px;
+    }
+    .buttons_div_contact #back2top{
+        padding: 5px;
+        border: #9BF8F4 1px solid;
+        color: whitesmoke;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    .buttons_div_contact #resume_btn{
+        padding: 5px;
+        background-color: #9BF8F4;
+        font-weight: 500;
+        border-radius: 5px;
+        border: none;
+    }
+
+    #seeoff button{
+        display: none;
     }
 
 }
